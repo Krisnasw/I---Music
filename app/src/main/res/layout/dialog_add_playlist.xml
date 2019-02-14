@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/btmSheetContent"
+    android:padding="@dimen/_20sdp"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFF"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:textAlignment="center"
+        android:textSize="@dimen/_10ssp"
+        android:textColor="@color/text_color"
+        android:text="Buat Playlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etPlaylistName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/gray_textfield"
+        android:hint="Judul Playlist"
+        android:inputType="text"
+        android:padding="@dimen/_10sdp"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:textColor="#FFF"
+            android:id="@+id/kembali"
+            android:textAllCaps="false"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:background="@drawable/button_back"
+            android:text="Kembali"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:textColor="#FFF"
+            android:id="@+id/btnSubmit"
+            android:textAllCaps="false"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:background="@drawable/button_accent"
+            android:text="Submit"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

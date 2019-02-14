@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.intivestudio.ryppmusic"
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        buildConfigField("String", "BASE_URL", "\"http://rypp.gabut.in/api/v1/\"")
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    // Libs
+    implementation "com.pixplicity.easyprefs:library:$rootProject.easyPrefs"
+    implementation "com.github.bumptech.glide:glide:$rootProject.glideVersion"
+    implementation "com.android.support:cardview-v7:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:design:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion"
+
+    implementation "com.intuit.sdp:sdp-android:$rootProject.sdpVersion"
+    implementation "com.intuit.ssp:ssp-android:$rootProject.sdpVersion"
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.retrofitVersion"
+    implementation "com.squareup.okhttp3:okhttp:$rootProject.okHttpVersion"
+    implementation "com.google.code.gson:gson:$rootProject.gsonVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.okHttpLoggingVersion"
+
+    implementation "com.roughike:bottom-bar:$rootProject.bottomBarVersion"
+    implementation "de.hdodenhof:circleimageview:$rootProject.cimgVersion"
+    implementation "com.mobsandgeeks:android-saripaar:$rootProject.validatorVersion"
+    implementation "com.karumi:dexter:$rootProject.dexterVersion"
+
+    implementation 'android.arch.persistence.room:runtime:' + rootProject.archRoomVersion
+    annotationProcessor 'android.arch.persistence.room:compiler:' + rootProject.archRoomVersion
+    implementation 'com.github.f0ris.sweetalert:library:' + rootProject.sweetAlertVersion
+}

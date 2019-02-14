@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etPencarian"
+        android:hint="Masukkan Judul Lagu"
+        android:background="@drawable/gray_textfield"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:drawableRight="@drawable/ic_search"
+        android:drawableTint="@color/colorPrimary"
+        android:paddingRight="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:background="#000"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvMusic"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:scrollbars="vertical" />
+
+            <ProgressBar
+                android:id="@+id/progressWheel"
+                android:layout_marginTop="@dimen/_100sdp"
+                android:progressTint="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

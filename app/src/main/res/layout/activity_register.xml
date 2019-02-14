@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="29dp"
+            android:layout_marginRight="29dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:fontFamily="@font/sfnsdisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Daftar I - Music"
+                android:textColor="#171717"
+                android:textSize="32.6sp" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:src="@drawable/waveline" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="#00000000"
+                android:fontFamily="@font/roboto_light"
+                android:hint="Nama Lengkap"
+                android:inputType="text"
+                android:textColor="#000"
+                android:textColorHint="#000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="9dp"
+                android:background="#b9b9b9" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="#00000000"
+                android:fontFamily="@font/roboto_light"
+                android:hint="No. Telp"
+                android:inputType="number"
+                android:textColor="#000"
+                android:textColorHint="#000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="9dp"
+                android:background="#b9b9b9" />
+
+            <EditText
+                android:id="@+id/etBirthdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="#00000000"
+                android:fontFamily="@font/roboto_light"
+                android:hint="Tanggal Lahir"
+                android:inputType="date"
+                android:textColor="#000"
+                android:textColorHint="#000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="9dp"
+                android:background="#b9b9b9" />
+
+            <EditText
+                android:id="@+id/etEmails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="#00000000"
+                android:fontFamily="@font/roboto_light"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:textColor="#000"
+                android:textColorHint="#000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="9dp"
+                android:background="#b9b9b9" />
+
+            <EditText
+                android:id="@+id/etPasswd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="#00000000"
+                android:fontFamily="@font/roboto_light"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="#000"
+                android:textColorHint="#000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="9dp"
+                android:background="#b9b9b9" />
+
+            <RadioGroup
+                android:id="@+id/radioSex"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Laki - Laki"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Perempuan" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/rect_grayoutline"
+                android:fontFamily="@font/roboto_light"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="Daftar Sekarang"
+                android:textColor="#000"
+                android:textSize="15.4sp" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/btnBackLogin"
+        android:fontFamily="@font/roboto_light"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text="Sudah punya akun ? Login"
+        android:layout_marginBottom="25dp"
+        android:textSize="17.3sp" />
+
+</RelativeLayout>

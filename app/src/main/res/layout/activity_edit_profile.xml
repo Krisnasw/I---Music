@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_above="@id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:background="@color/colorPrimaryDark"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp">
+
+                <RelativeLayout
+                    android:id="@+id/change_avatar_register"
+                    android:layout_marginTop="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="105dp"
+                    android:layout_height="105dp">
+
+                    <ImageView
+                        android:id="@+id/iv_avatar_register"
+                        android:background="@drawable/oval_background"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_nama"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/gray_textfield"
+                android:hint="Nama Lengkap"
+                android:padding="@dimen/_10sdp"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/gray_textfield"
+                android:hint="Alamat E - Mail"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/_10sdp"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/gray_textfield"
+                android:hint="No. Telp"
+                android:inputType="phone"
+                android:padding="@dimen/_10sdp"
+                android:singleLine="true" />
+
+            <TextView
+                android:textSize="@dimen/_15ssp"
+                android:id="@+id/et_tanggal_lahir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/gray_textfield"
+                android:hint="Tanggal Lahir"
+                android:padding="@dimen/_10sdp"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:text="Ubah Profile"
+        android:textColor="#FFF"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize" />
+
+</RelativeLayout>
